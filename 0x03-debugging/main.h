@@ -1,34 +1,11 @@
-#ifdef _MAIN_H_
-#define _MAIN_H_
+#ifndef MAIN_H
+#define MAIN_H
 
-/**
-* main - tests function that prints if integer is positive or negative
-* Return: 0
-*/
+#include <stdio.h>
 
 void positive_or_negative(int i);
-
-/**
-* main - causes an infinite loop
-* Return: 0
-*/
-
-int main(void);
-
-/**
-* main - prints the largest of 3 integers
-* Return: 0
-*/
-
 int largest_number(int a, int b, int c);
+int convert_day(int month, int day);
+void print_remaining_days(int month, int day, int year);
 
-
-/**
-* main - takes a date and prints how many days are left in the year, taking
-* leap years into account
-* Return: 0
-*/
-
-int convert_day(int month, int day)
-
-#endif
+#endif /* MAIN_H */

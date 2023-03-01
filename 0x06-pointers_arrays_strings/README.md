@@ -1,8 +1,8 @@
 # C - More pointers, arrays and strings
 
 # Learning Objectives
-
 At the end of this project, student is expected to be able to explain to anyone, without the help of Google:
+	
 	- What are pointers and how to use them
 	- What are arrays and how to use them
 	- What are the differences between pointers and arrays

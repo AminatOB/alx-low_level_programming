@@ -1,31 +1,26 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
-  * cap_string - ...
-  * @s: ...
-  *
-  * Return: char value
-  */
-char *cap_string(char *s)
+ * leet - encode string into 1337 leet
+ * @s: string to manipulate
+ * Return: string
+ */
+
+char *leet(char *s)
 {
-	int a = 0, i;
-	int cspc = 13;
-	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
 
-	while (s[a])
+	int a[11] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	int b[11] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+
+	int i, j;
+
+	for (j = 0; s[j] != '\0'; j++)
 	{
-		i = 0;
-
-		while (i < cspc)
+		for (i = 0; a[i] != '\0'; i++)
 		{
-			if ((a == 0 || s[a - 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
-				s[a] -= 32;
-
-			i++;
+			if (s[j] == a[i])
+				s[j] = b[i];
 		}
-
-		a++;
 	}
 
 	return (s);

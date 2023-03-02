@@ -93,4 +93,25 @@ char *leet(char *s);
 
 void print_number(int n);
 
+/**
+ * infinite_add - adds two numbers
+ * @n1: number one argument for *infinite_add
+ * @n2: number two argument for *infinite_add
+ * @r: buffer that the function will use to store the result
+ *    argument for *infinite_add
+ * @size_r: buffer size argument for *infinite_add
+ * Return: the pointer to dest
+ */
+
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
+
+/**
+ * print_buffer - Prints a buffer 10 bytes at a time, starting with
+ *                the byte position, then showing the hex content,
+ *                then displaying printable charcaters.
+ * @b: The buffer to be printed.
+ * @size: The number of bytes to be printed from the buffer.
+ */
+void print_buffer(char *b, int size)
+
 #endif

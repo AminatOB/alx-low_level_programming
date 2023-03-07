@@ -1,6 +1,7 @@
 # 0x08. C - Recursion
 
 # Resources
+
  Read or watch:
 	* 0x08. Recursion, introduction
 	* What on Earth is Recursion?
@@ -9,6 +10,7 @@
 	* C Programming Tutorial 86, Recursion pt.2
 
 # Learning Objectives
+
  At the end of the project, student is expected to be able to explain to anyone, without the help of Google:
 	* What is recursion
 	* How to implement recursion
@@ -16,6 +18,7 @@
 	* In what situations you shouldn’t implement recursion
 
 # Requirements
+
  General
 	* Allowed editors: vi, vim, emacs
 	* All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
@@ -34,6 +37,7 @@
 	* You are not allowed to use static variables
 
 # Tasks
+
 0. Write a function that prints a string, followed by a new line.
 
 	* Prototype: `void _puts_recursion(char *s)`;

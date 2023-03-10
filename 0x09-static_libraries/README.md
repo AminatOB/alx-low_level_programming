@@ -1,7 +1,7 @@
 # 0x09. C - Static libraries
 
-# Author
+# Author:
 Julien Barbier
 
-#Task Complted By:
+#Tasks Completed By:
 Bakare Aminat Oluwatoyosi

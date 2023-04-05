@@ -1,31 +1,24 @@
 #include "lists.h"
 
 /**
- * add_nodeint_end - To add a node at the begining of a listint_t.
- * @n: data type pointer of the struct.
- * @head: data type pointer of the pointer head/next node.
- * Return: elements of the str may_node.
+ * add_nodeint - This adds a  node at the beginning of the list
+ * @head: the heading node within the list
+ * @n: data type pointer of the struct
+ *
+ * Return: the elements of the str
  */
-listint_t *add_nodeint_end(listint_t **head, const int n)
-{
-	listint_t *may_node, *tmp_node;
 
-	may_node = malloc(sizeof(listint_t));
-	if (may_node == NULL)
+listint_t *add_nodeint(listint_t **head, const int n)
+{
+	listint_t *mayNode;
+
+	mayNode = malloc(sizeof(listint_t));
+	if (mayNode == NULL)
 		return (NULL);
 
-	may_node->n = n;
-	may_node->next = NULL;
-	if (*head == NULL)
-	{
-		*head = may_node;
-	}
-	else
-	{
-		tmp_node = *head;
-		while (tmp_node->next != NULL)
-			tmp_node = tmp_node->next;
-		tmp_node->next = may_node;
-	}
-	return (may_node);
+	mayNode->n = n;
+	mayNode->next = *head;
+	*head = mayNode;
+	return (mayNode);
 }
+

@@ -1,12 +1,12 @@
 #include "lists.h"
 
 /**
- * print_listint(NULL) - to print the elements of a linked list.
+ * print_listint - to print the elements of a linked list.
  * @h: the linked list of listint_t to print.
  * Return: the mumber of nodes (count).
  */
 
-size_t print_listint(const listint_t *h);
+size_t print_listint(const listint_t *h)
 {
 	size_t count = 0;
 
